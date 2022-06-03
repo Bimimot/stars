@@ -1,0 +1,171 @@
+.header {
+    display: flex;
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    background-color: #29323c;
+    height: 90px;
+    max-width: 1440px;
+}
+
+@media screen and (max-width: 424px) {
+    .header {
+        height: 60px;
+    }
+}
+
+@media screen and (min-width: 425px) {
+    .header {
+        height: 90px;
+    }
+}
+
+.header__container {
+    position: relative;
+    flex-direction: row;
+    height: 100%;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (max-width: 425px) {
+    .header__container {
+        display: none;
+    }
+}
+
+
+@media screen and (min-width: 426px) {
+    .header__container {
+        display: flex;
+    }
+}
+.switch {
+    display: flex;
+    position: relative;
+    align-self: center;
+    width: 80px; 
+    height: 36px; 
+    border-radius: 22px; 
+    background-color: black;
+    z-index: 0;
+    margin: 0;
+    margin-left: 20px;
+    padding: 0;
+    border: 3px solid white;
+    cursor: pointer;
+    
+    transition-duration: .6s;
+}
+
+.switch::after { /*кнопка*/
+position: absolute;
+z-index: 1;
+  top: 3px; 
+  left: 3px; 
+    content: "";
+    height: 30px; 
+    width: 30px; 
+    border-radius: 22px;
+    background: white; /* цвет кнопки */
+    transition-duration: .6s; /* анимация */
+}
+
+.switch-on {
+    background: #29323c;
+    
+}
+.switch-on::after {
+    left: 47px;
+}
+
+.footer {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    height: min-content;
+    justify-content: center;
+    align-items: center;
+    color: #f4f4f4;
+}
+
+@media screen and (max-width: 424px) {
+    .footer {
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 425px) {
+    .footer {
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .footer {
+        font-size: 20px;
+    }
+}
+
+.footer__name {
+    font-family: Roboto, Arial, sans-serif;
+    letter-spacing: 5px;
+    margin: 10px 0 0 6px;
+}
+
+.footer__mail {
+    font-family: Roboto, Arial, sans-serif;
+    letter-spacing: 2px;
+    text-decoration: none;
+    margin: 6px 0 10px 0;
+}
+
+.footer__mail:hover {
+    cursor: pointer;
+    color: #118c4e;
+}
+.galaxy {
+    position: relative;
+    display: flex;
+    margin: 0;
+    width: 100%;
+    height: calc(100% - 200px);
+    background-color: transparent;
+    overflow: hidden;
+    transition: opacity 0.5s linear;
+}
+
+@media screen and (max-width: 767px) {
+    .section {
+        margin-bottom: 12px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .galaxy {
+        left: -20px;
+    }
+}
+
+@media screen and (min-width: 1441px) {
+    .galaxy {
+        left: calc(700px - 50vw);
+    }
+}
+
+
+.newStar {
+    position: absolute;
+    /* background-color: #f4f4f4; */
+    border-radius: 50%;
+    opacity: 0%;
+    overflow: hidden;
+}
+
+.no-opacity {
+    opacity: 0;
+}
+body{margin:0!important;padding:0!important}.app{position:relative;display:flex;flex-direction:column;background-color:#111;height:100vh}
